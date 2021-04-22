@@ -1,0 +1,29 @@
+{
+  "name": "aqatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.ts",
+    "api-test": "wdio wdio.conf.ts --suite api",
+    "db-test": "wdio wdio.conf.ts --suite db",
+    "iframe-test": "wdio wdio.conf.ts --suite iframe"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.5.0",
+    "got": "^11.8.2",
+    "sqlite": "^4.0.21",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.5.0",
+    "@wdio/mocha-framework": "^7.4.6",
+    "@wdio/spec-reporter": "^7.4.3",
+    "chromedriver": "^90.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "wdio-chromedriver-service": "^7.0.0"
+  }
+}
