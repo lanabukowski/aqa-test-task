@@ -8,12 +8,12 @@
             let code = element.value;
             code = code.replace('https://www.w3schools.com','https://www.bing.com')
             element.value = code;
-        }) DID NOT WORK
+        }) 
 
         await browser.execute(function() {
                 let sourse = document.querySelector('.cm-m-xml.cm-string');
                 sourse.textContent = "https://www.bing.com"
-        }) DID NOT WORK
+        }) 
         
         let element = await(await $('#textareaCode'));
         let code = await element.getValue();
@@ -21,9 +21,9 @@
         await element.setValue(code);
             sourse.textContent = "https://www.bing.com";
         
-    }) DID NOT WORK
-})
-Code edited with this 3 methods did not compile.
+    }) 
+}) I think regular webdriver flow did not work because Selenium webdriver doesn't work well with CodeMirror which are used as Text editor on w3school.com
+
 **/
 
 describe("iframe test", function() {
